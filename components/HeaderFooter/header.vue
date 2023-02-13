@@ -17,7 +17,7 @@
                             </li>
 
                             <li>
-                                <nuxt-link :to="localePath('#!')" class="header__menu__link">{{ $t('partners') }}</nuxt-link>
+                                <nuxt-link :to="localePath('/partners')" class="header__menu__link">{{ $t('partners') }}</nuxt-link>
                             </li>
 
                             <li>

@@ -35,7 +35,6 @@
                  infinite: false,
                  speed: 1000,
                  slidesToShow: 2.5,
-                 autoplay:true,
                  responsive: [
                         {
                          breakpoint: 1100,
@@ -58,6 +57,7 @@
                         settings: {
                             slidesToScroll: 1,
                             speed:1500,
+                            autoplay:true,
                             autoplayTimeout:1500,
                             fade:true
                             }

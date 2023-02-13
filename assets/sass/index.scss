@@ -2,6 +2,7 @@
 @import './files/color';
 @import './files/mixins';
 @import '_about';
+@import '_partners';
 
 body{
   font-family: "Gotham Pro", sans-serif;
@@ -684,7 +685,8 @@ body{
     .footer__cart,
     .about__cart,
     .priorities__cart,
-    .charity__cart{
+    .charity__cart,
+    .partners__cart{
         margin-left: 30px;
         margin-right: 30px;
     }
