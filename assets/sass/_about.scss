@@ -1,0 +1,507 @@
+// about start
+
+.about{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 75px 0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    .activities__title__h2{
+        color:$link;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(180deg, rgba(16, 22, 34, 0.64) 0%, rgba(16, 22, 34, 0) 18.23%),linear-gradient(180deg, rgba(16, 22, 34, 0) 0%, #101622 100%),rgba(16,22,34,.56);
+    }
+
+    &__list{
+        padding: 40px 0;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__text{
+        @include fontAll(28px,500,$link);
+        line-height: 140%;
+        margin-bottom: 30px;
+    }
+
+    &__link{
+        position: relative;
+        display: inline-block;
+        flex-shrink: 0;
+        padding: 16px 24px;
+        border:1px solid #b4b7bd;
+        border-radius:50px;
+        -webkit-border-radius:50px;
+        -moz-border-radius:50px;
+        -ms-border-radius:50px;
+        -o-border-radius:50px;
+        @extend%transition;
+
+        &:hover{
+            color:#ffe5a4;
+            border-color: #ffe5a4;
+        }
+    }
+}
+
+// about end
+
+
+// priorities start
+
+.priorities{
+    position: relative;
+    border-top:1px solid #3e434d;
+    border-bottom:1px solid #3e434d;
+    margin-bottom: 60px;
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+        .priorities__item:nth-last-child(1){
+            border-right:0px;
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 60px;
+        border-right: 1px solid #3e434d;
+    }
+
+    &__icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        border: solid 1px #3e434d;
+        border-radius: 50%;
+        margin-bottom: 40px;
+        svg {
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    &__title__h3{
+        @include fontAll(24px,500,$link);
+        line-height: 135%;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        @include fontAll(16px,400,#b4b7bd);
+        line-height: 145%;
+    }
+}
+
+// priorities end
+
+
+// charity start
+
+.charity{
+    position: relative;
+    margin-bottom: 60px;
+
+    &__list{
+       padding: 65px;
+       background: #f4f6fa;
+       border-radius: 56px;
+       -webkit-border-radius: 56px;
+       -moz-border-radius: 56px;
+       -ms-border-radius: 56px;
+       -o-border-radius: 56px;
+    }
+
+    &__taxt{
+        @include fontAll(28px,400,#50545e);
+        line-height: 145%;
+        border-top: 1px solid #d0d2d7;
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+}
+
+// charity end
+
+
+// ecology start
+
+.ecology{
+    position: relative;
+    margin-bottom: 60px;
+
+    .activities__title__h2{
+        color:$link;
+    }
+
+    &__list__text{
+        @include fontAll(24px,500,#b4b7bd);
+        line-height: 145%;
+        margin-bottom: 24px;
+    }
+
+    &__text{
+        @include fontAll(16px,400,#b4b7bd);
+        line-height: 145%;
+    }
+
+    &__slick__img{
+        @include fiximg(100%,100%,true);
+        padding-right: 30px;
+        img{
+            object-position: center center;
+            max-height: 300px;
+            overflow: hidden;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: auto 700px;
+        grid-gap: 50px;
+        align-items:start;
+        border-top: 1px solid #3e434d;
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+
+    &__slick{
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: -2px;
+            bottom: -2px;
+            left: 50%;
+            right: -2px;
+            background: linear-gradient(270deg, #101622 0%, rgba(16, 22, 34, 0) 100%);
+        }
+
+        .slick-disabled{
+            opacity: 0.5;
+        }
+
+        .slick-arrow{
+            font-size: 0;
+        }
+
+        .slick-prev {
+            border: 1px solid #d0d2d7;
+            background-color:transparent;
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            top: -155px;
+            right: 120px;
+            border-radius:50px;
+            -webkit-border-radius:50px;
+            -moz-border-radius:50px;
+            -ms-border-radius:50px;
+            -o-border-radius:50px;
+            &::after{
+                content: "";
+                display: block;
+                width: 16px;
+                height: 14px;
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-image: url("data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 7L8 7L1 7M1 7L7 13M1 7L7 1' stroke='%23F4F6FA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+            }
+        }
+
+        .slick-next {
+            border: 1px solid #d0d2d7;
+            background-color:transparent;
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            border-radius:50px;
+            -webkit-border-radius:50px;
+            -moz-border-radius:50px;
+            -ms-border-radius:50px;
+            -o-border-radius:50px;
+            top: -155px;
+            right: 50px;
+            &::after{
+                content: "";
+                display: block;
+                width: 16px;
+                height: 14px;
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-image: url("data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7L8 7L15 7M15 7L9 13M15 7L9 1' stroke='%23F4F6FA' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E");
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+            }
+        }
+    }
+}
+
+// ecology end
+
+
+// social start
+
+.social{
+    position: relative;
+
+    &__cart{
+        padding: 70px;
+        height: auto;
+        background-color:$link;
+    }
+
+    &__text{
+        @include fontAll(28px,400,$text);
+        line-height: 140%;
+    }
+
+    &__text__list{
+        @include fontAll(24px,500,$title);
+        line-height: 140%;
+    }
+
+    &__list{
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+        grid-gap: 50px;
+        margin: 70px 0;
+    }
+
+    &__item{
+        display: grid;
+        grid-template-columns: 48px auto;
+        align-items:center;
+        grid-gap: 20px;
+    }
+
+    &__item__number{
+        @include fontAll(18px,700,$text);
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border: 1px solid #d0d2d7;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    &__title__h3{
+        @include fontAll(24px,500,$title);
+        line-height: 135%;
+        margin-bottom: 10px;
+    }
+
+    &__cart__text{
+        @include fontAll(22px,400,$text);
+        line-height: 140%;
+    }
+}
+
+// social end
+
+
+@media (max-width:1500px){
+    .social__cart,
+    .charity__list,
+    .priorities__item{
+        padding: 30px;
+    }
+}
+
+@media (max-width:1200px){
+    .about__text,
+    .charity__taxt,
+    .social__text{
+        font-size: 26px;
+    }
+
+    .priorities__title__h3,
+    .ecology__list__text,
+    .social__text__list,
+    .social__title__h3{
+        font-size: 22px;
+    }
+
+    .social__list{
+        margin: 30px 0;
+    }
+
+    .charity__taxt,
+    .ecology__list{
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+
+    .ecology__slick .slick-prev,
+    .ecology__slick .slick-next{
+        top: -115px;
+    }
+
+    .ecology__list{
+        grid-template-columns: auto 550px;
+        grid-gap: 30px;
+    }
+}
+
+@media (max-width:1100px){
+    .priorities__list{
+        grid-template-columns: 1fr;
+    }
+
+    .priorities__item{
+        border-right:0px;
+        border-bottom: 1px solid #3e434d;
+    }
+
+    .priorities__item:nth-last-child(1) {
+        border-bottom: 0px;
+    }
+
+    .about__text, .charity__taxt, .social__text {
+        font-size: 24px;
+    }
+
+    .priorities__title__h3, .ecology__list__text, .social__text__list, .social__title__h3 {
+        font-size: 20px;
+    }
+
+    .ecology__list {
+        grid-template-columns: auto 400px;
+        grid-gap: 30px;
+    }
+
+    .about{
+        padding: 70px 0px 30px 0px;
+    }
+
+    .priorities__item {
+        padding: 30px 0px;
+    }
+}
+
+@media (max-width:750px){
+    .ecology__list {
+        grid-template-columns: auto 250px;
+        grid-gap: 30px;
+    }
+
+    .ecology__slick .slick-prev, .ecology__slick .slick-next {
+        top: -105px;
+    }
+
+    .about__text, .charity__taxt, .social__text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:650px){
+    .ecology__slick .slick-next{
+        right: 30px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .ecology__slick .slick-prev{
+        right: 80px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .ecology__slick .slick-prev, .ecology__slick .slick-next {
+        top: -95px;
+    }
+
+    .social__list{
+        grid-gap: 30px;
+    }
+}
+
+@media (max-width:550px){
+    .ecology__list{
+        display: block;
+    }
+
+    .ecology__slick .slick-arrow {
+        display: none !important;
+    }
+
+    .ecology__cart{
+        margin-right: 30px;
+    }
+
+    .ecology__slick{
+        margin-top: 30px;
+    }
+
+    .ecology__slick__img{
+        padding-right: 0px;
+    }
+
+    .social__item__number {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .social__item {
+        grid-template-columns: 35px auto;
+    }
+
+    .priorities__icons{
+        width: 150px;
+        height: 150px;
+    }
+
+    .about__text, .charity__taxt, .social__text {
+        font-size: 20px;
+    }
+
+    .priorities__title__h3, .ecology__list__text, .social__text__list, .social__title__h3 {
+        font-size: 18px;
+    }
+}
