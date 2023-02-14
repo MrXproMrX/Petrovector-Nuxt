@@ -33,6 +33,7 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
     "sass": "^1.57.1",
     "sass-loader": "^10.4.1"
   },
@@ -42,7 +43,7 @@
     },
     "lint-staged":{
         "*.js":[
-            "npm run dev",
+            "pnpm dev",
             "git add"
         ]
     }
