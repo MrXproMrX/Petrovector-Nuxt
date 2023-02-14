@@ -42,8 +42,8 @@
         "pre-commit":"lint-staged"
     },
     "lint-staged":{
-        "*.js,.json,.vue":[
-            "pnpm dev:fix",
+        "*.js":[
+            "pnpm dev",
             "git add"
         ]
     }
