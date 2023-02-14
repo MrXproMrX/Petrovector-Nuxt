@@ -43,7 +43,7 @@
     },
     "lint-staged":{
         "*.js":[
-            "pnpm dev",
+            "pnpm dev:fix",
             "git add"
         ]
     }
