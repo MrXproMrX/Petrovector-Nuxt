@@ -21,11 +21,7 @@
                             </li>
 
                             <li>
-                                <nuxt-link :to="localePath('#!')" class="header__menu__link">{{ $t('contacts') }}</nuxt-link>
-                            </li>
-
-                            <li>
-                                <nuxt-link :to="localePath('#!')" class="header__menu__link">{{ $t('quotes') }}</nuxt-link>
+                                <nuxt-link :to="localePath('/contacts')" class="header__menu__link">{{ $t('contacts') }}</nuxt-link>
                             </li>
                         </ul>
 

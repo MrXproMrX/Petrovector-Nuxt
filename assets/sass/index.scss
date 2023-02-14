@@ -3,6 +3,7 @@
 @import './files/mixins';
 @import '_about';
 @import '_partners';
+@import '_contacts';
 
 body{
   font-family: "Gotham Pro", sans-serif;
@@ -686,7 +687,8 @@ body{
     .about__cart,
     .priorities__cart,
     .charity__cart,
-    .partners__cart{
+    .partners__cart,
+    .contacts_in__cart{
         margin-left: 30px;
         margin-right: 30px;
     }

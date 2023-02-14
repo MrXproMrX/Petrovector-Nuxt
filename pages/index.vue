@@ -266,8 +266,8 @@
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-import activitiesVue from '/components/Index/activities.vue'
-import employeesVue from '/components/Index/employees.vue'
+import activitiesVue from '@/components/Index/activities.vue'
+import employeesVue from '@/components/Index/employees.vue'
 export default {
   name: 'IndexPage',
 

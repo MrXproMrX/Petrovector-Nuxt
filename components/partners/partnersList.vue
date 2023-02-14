@@ -13,6 +13,12 @@
 
 <script>
 export default {
-    props:['partnersList']
+    props:{
+        partnersList:{
+            type:Array,
+            required: true,
+            default: () => []
+        }
+    }
 }
 </script>
